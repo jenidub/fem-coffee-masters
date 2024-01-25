@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Masters Checkout</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img
+            class="header-logo"
+            src="./assets/coffee_masters_logo.png"
+            alt="Coffee Masters coffee cup logo"
+        >
+        <h1 class="header-text">Coffee Masters</h1>
+    </div>
+    <div class="checkout-grid">
+        <!-- Items list - use a grid -->
+        <div class="checkout-items">
+            <h3 class="checkout-section-title">Items</h3>
+            <div class="item-listing">
+                <p class="item-quantity">1x</p>
+                <p class="item-name">Cappuccino</p>
+                <p class="item-description">Lite foam</p>
+                <p class="item-price">$3.35</p>
+            </div>
+            <div class="item-listing">
+                <p class="item-quantity">2x</p>
+                <p class="item-name">Mocha Peppermint Frappuccino</p>
+                <p class="item-description">No modifications</p>
+                <p class="item-price">$5.75</p>
+            </div>
+            <div class="item-listing">
+                <p class="item-quantity">1x</p>
+                <p class="item-name">Water</p>
+                <p class="item-description">With regular ice</p>
+                <p class="item-price">Free</p>
+            </div>
+        </div>
+
+        <!-- Checkout Customer Info - use flexbox -->
+        <div class="checkout-info">
+            <div class="checkout-customer">
+                <h3 class="checkout-section-title">Customer Info</h3>
+                <div class="checkout-customer-input-group">
+                    <label for="checkout-customer" class="checkout-customer-label">Name for the Order</label>
+                    <input id="checkout-customer" class="checkout-customer-input" placeholder="Let us know who's coming =)" />
+                </div>
+                <div class="checkout-customer-contact-input-group">
+                    <label for="checkout-customer-contact" class="checkout-customer-contact-label">Mobile # for Text Alerts</label>
+                    <input id="checkout-customer-contact" class="checkout-customer-contact-input" placeholder="Example 555-555-5555" />
+                </div>
+            </div>
+    
+            <!-- Checkout Payment Info - use flexbox -->
+            <div class="checkout-payment">
+                <h3 class="checkout-section-title">Payment Info</h3>
+                <div class="checkout-payment-cc-input-group">
+                    <label for="checkout-payment-cc" class="checkout-payment-cc-input-label">Card Number</label>
+                    <input id="checkout-payment-cc" class="checkout-payment-cc-input" placeholder="16 digits - any brand" />
+                </div>
+                <div class="checkout-payment-cvv-input-group">
+                    <label for="checkout-payment-cvv" class="checkout-payment-cvv-label">CVV</label>
+                    <input id="checkout-customer-cvv" class="checkout-payment-cvv-input" placeholder="3-4 digits" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="submit-order">
+        <div class="submit-order-info">
+            <div class="subtotal">
+                <p class="subtotal-label">Subtotal</p>
+                <p class="subtotal-value">$9.65</p>
+            </div>
+            <div class="tax">
+                <p class="tax-label">Tax</p>
+                <p class="tax-value">$1.30</p>
+            </div>
+            <div class="total">
+                <p class="total-label">Total</p>
+                <p class="total-value">$10.95</p>
+            </div>
+        </div>
+        <button id="place-order-button">Place Order</button>
+    </div>
+</body>
+</html>
